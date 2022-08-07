@@ -1,0 +1,66 @@
+.banner {
+    padding-top: 110px;
+    background-color: #F1CA2D;
+    background-image: url('../images/jpg/banner.jpg');
+    background-repeat: no-repeat;
+    box-sizing: 100%;
+    &__title {
+        max-width: 200px;
+        margin-bottom: 17px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.04em;
+        color: #56295A;
+        span {
+            font-weight: 500;
+        }
+    }
+    &__text {
+        padding-bottom: 20px;
+        max-width: 180px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #56295A;
+    }
+}
+
+.cat {
+    background-image: url('../images/png/vtop3-banner-insta-cat.png');
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    background-position-x: right;
+    background-size: 95px;
+}
+
+@media (min-width: $screen-table) {
+    .banner {
+        &__title {
+            max-width: 400px;
+            font-size: 36px;
+            line-height: 42px;
+        }
+        &__text {
+            max-width: 300px;
+        }
+    }
+    .cat {
+        background-size: 102px;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .banner {
+        &__title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+    }
+
+    .cat {
+        background-position-x: center;
+        background-position-y: -6px;
+        background-size: 126px;
+    }
+}

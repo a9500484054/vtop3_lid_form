@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="css/min-main.css">
+</head>
+<body>
+    <!-- Баннер -->
+    <div class="banner">
+        <div class="container cat">
+            <h2 class="banner__title">Заполни форму и получи <span>подарок*</span></h2>
+            <p class="banner__text">*при условии заключение договора</p>
+        </div>
+    </div>
+
+    <!-- Секция с формой -->
+    <section class="service-form">
+
+        <h2 class="service-form__title">Какая из наших услуг вас интересует?</h2>
+        
+        <!-- Полоска с результатом прохождения формы-->
+        <div class="service-form__box">
+            <div class="result service-form__result">
+                <span class="result__interest"><span class="result__number">0</span>%</span>
+                <div class="result__box">
+                    <div class="result__progress"></div>
+                </div>
+            </div>
+
+            <!-- Форма -->
+            <form action="#" id="service-form">
+
+                <div class="service-form__wrapp">
+
+                    <!-- Блок выбора услуг -->
+                    <div class="block-service block-service--active service-form__block-service">
+
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="Site-development">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Разработка сайта</span>
+                        </label>
+    
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="SEO-promotion">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">SEO продвижение</span>
+                        </label>
+    
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="Contextual-advertising">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Контекстная реклама</span>
+                        </label>
+    
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="media-advertising">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Медийная реклама</span>
+                        </label>
+    
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="Design-of-promotional-materials">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Разработка дизайна рекламных материалов</span>
+                        </label>
+    
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="SMM">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Продвижение в социальных сетях (SMM)</span>
+                        </label>
+    
+                    </div>
+                    
+                    <!-- Блок какая нужна разработка/доработка -->
+                    <div class="block-service service-form__block-service">
+                        
+                        <h3 class="block-service__title">Вам требуется разработка нового сайта или доработка существующего?</h3>
+                        
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="New-site-development">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Разработка нового сайта</span>
+                        </label>
+    
+                        <label class="block-service__label-checkbox">
+                            <input class="block-service__checkbox" type="checkbox" name="Refinement-of-the-existing">
+                            <span class="block-service__checkbox-elem"></span>
+                            <span class="block-service__value">Доработка существующего</span>
+                        </label>
+                    </div>
+                    
+                    <!-- Блок с контактными данными -->
+                    <div class="block-service service-form__block-service">
+                        <h3 class="block-service__title">Осталось совсем немного:</h3>
+
+                        <label class="block-service__label-text">
+                            <span class="block-service__name">ФИО</span>
+                            <span class="block-service__wrap-text">
+                                <input class="block-service__input-text" type="text" name="name" placeholder="Иванов Иван Иванович">
+                                <span class="block-service__text-elem">Иванов Иван Иванович</span>
+                            </span>
+                        </label>
+
+                        <label class="block-service__label-text">
+                            <span class="block-service__name">E-mail</span>
+                            <span class="block-service__wrap-text ">
+                                <input class="block-service__input-text" name="email" type="text" placeholder="Ваша почта">
+                                <span class="block-service__text-elem">name@mail.ru</span>
+                            </span>
+                        </label>
+
+                        <label class="block-service__label-text">
+                            <span class="block-service__name">Телефон</span>
+                            <span class="block-service__wrap-text">
+                                <input class="block-service__input-text" name="phone" type="text" placeholder="+375 (__) ___ __ __">
+                                <span class="block-service__text-elem">+375 (29) 123 45 67</span>
+                            </span>
+                        </label>
+
+                    </div>
+                    
+                    <!-- Блок с подарком -->
+                    <div class="block-service service-form__block-service">
+                        <p class="block-service__text">Ура! А вот и Приз!</p>
+                        <p class="block-service__text-discount">Скидка -5%</p>
+                        <p class="block-service__text">на разработку сайта</p>
+                    </div>
+
+                </div>
+
+                <!-- Враппер для кнопок -->
+                <div class="service-form__wrapp-btn">
+                    <button class="btn btn--white btn-back" id="btn-js-back" type="button">Назад</button>
+                    <button class="btn btn--active btn--yellow btn-next" id="btn-js-next" type="button">Далее</button>
+                    <button class="btn btn--yellow btn-send" id="btn-js-send" type="submit">Отправить</button>
+                    <a class="btn btn--yellow" id="btn-js-main" href="https://vtop3.by/">На главную</a>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <!-- <script src="js/app.js"></script>  -->
+    <!-- <script src="js/mask.js"></script>  -->
+    <script src="js/min-app.js"></script>
+</body>
+</html>

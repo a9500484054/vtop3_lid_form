@@ -1,0 +1,28 @@
+.btn-back {
+    margin-bottom: 20px;
+    order: 2;
+}
+.btn-next {
+    margin-bottom: 20px;
+    order: 1
+}
+.btn-send {
+    margin-bottom: 20px;
+    order: 1
+}
+
+@media (min-width: $screen-table) {
+    .btn-back {
+        margin-bottom: 0;
+        margin-right: 20px;
+        order: 1;
+    }
+    .btn-next {
+        margin-bottom: 0;
+        order: 2
+    }
+    .btn-send {
+        margin-bottom: 0;
+        order: 2
+    }
+}

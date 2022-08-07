@@ -1,0 +1,29 @@
+.error {
+    &::after {
+    content: "";
+
+    max-width: 286px;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background: #D62C2C;
+    }
+    &--name {
+        &::after {
+            content: "Введите ФИО русскими буквами";
+        }
+    }
+    &--email {
+        &::after {
+            content: "Введите действующий e-mail";
+        }
+    }
+    &--phone {
+        &::after {
+            content: "Введите действующий номер телефона";
+        }
+    }
+}
